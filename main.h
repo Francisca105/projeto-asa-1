@@ -7,4 +7,6 @@ typedef struct peca {
     int p;
 } peca;
 
+// bool filtroPorT(const peca& elemento, peca original);
+
 #endif
