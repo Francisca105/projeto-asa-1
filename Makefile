@@ -10,3 +10,9 @@ clean:
 
 run:
 	@./proj
+
+test1:
+	@./proj < testes/1.in
+
+test2:
+	@./proj < testes/2.in
