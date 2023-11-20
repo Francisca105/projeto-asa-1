@@ -35,10 +35,20 @@ int main () {
         return (peca.d1 > D1 && peca.d2 > D2) || (peca.d1 > D2 && peca.d2 > D1); 
     });
 
+    std::vector<peca> vetor(dim.begin(), dim.end());
+
     for (int i = 0; i < dim.size(); i++) {
-        for (int j = i; j < dim.size(); j++) {
+        int mdc = vetor[i].d1 / D1 ;
+        if(vetor[i].d2/D2 < mdc) mdc = vetor[i].d2/D2;
+        if(vetor[i].d1/D1 == 0 && vetor[i].d2/D2 == 0 && vetor[i].d1/D2 == 0 && vetor[i].d2/D1 == 0) {
+            // se a peca couber na original e for a maior peça
+            // já n sei oq estou a fazer :)
+            // pls help
+        }
+
+        // for (int j = i; j < dim.size(); j++) {
             
-        }   
+        // }   
     }
 
     std::cout << max << "\n";
