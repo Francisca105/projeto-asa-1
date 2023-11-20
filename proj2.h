@@ -16,7 +16,6 @@ class piece {
         int a;
         int b;
         int p;
-        bool c;
 };
 
 #endif

@@ -3,7 +3,7 @@ CXXC = g++
 CXXFLAGS = -std=c++11 -O3 -Wall
 
 make:
-	$(CXX) $(CXXFLAGS) -o proj proj.h proj.cpp -lm
+	$(CXX) $(CXXFLAGS) -o proj2 proj2.h proj2.cpp -lm
 
 clean:
 	rm -f *.o proj

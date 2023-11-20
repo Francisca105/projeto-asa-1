@@ -40,7 +40,20 @@ int main() {
         given[i] = new piece(ai, bi, pi);
     }
 
-    std::cout << a(lista[W-1], lista, given, n, Y) << "\n";
+    for (int k=1; k<W; k++) {
+        piece* p = lista[k];
+        std::vector<std::tuple<piece*, piece*>> v;
+        for (int i=1; i<=p->getA()/2; i++)
+            v.push_back(std::make_tuple(lista[i*Y + i + p->getB()], lista[(p->getA()-i)*Y + p->getB() + (p->getA()-i)]));
+        for (int i=1; i<=p->getB()/2; i++)
+            v.push_back(std::make_tuple(lista[p->getA()*Y + p->getA() + i], lista[p->getA()*Y + p->getA() + (p->getB()-i)]));
+        int max = 0;
+        for (auto it=v.begin(); it!=v.end(); it++)
+            max = std::max(max, a(std::get<0>(*it), lista, given, n, Y) + a(std::get<1>(*it), lista, given, n, Y));
+        p->setP(max);
+    }
+
+    std::cout << lista[W-1]->getP() << "\n";
 
     return 0;
 }
