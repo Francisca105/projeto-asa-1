@@ -1,9 +1,24 @@
-#include "proj2.h"
-
 #include <iostream>
 #include <vector>
 #include <tuple>
 #include <algorithm>
+
+class piece {
+    public:
+        piece(int a, int b, int p) {
+            this->a = a;
+            this->b = b;
+            this->p = p;
+        }
+        int getA() { return this->a; }
+        int getB() { return this->b; }
+        int getP() { return this->p; }
+        void setP(int p) { this->p = p; }
+    private:
+        int a;
+        int b;
+        int p;
+};
 
 int main() {
 

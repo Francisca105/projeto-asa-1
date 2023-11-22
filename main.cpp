@@ -4,6 +4,7 @@
 #include <algorithm>
 
 // g++ -std=c++11 -O3 -Wall main.cpp -lm
+// Let's ignore this.
 
 #include "main.h"
 
@@ -37,19 +38,19 @@ int main () {
 
     std::vector<peca> vetor(dim.begin(), dim.end());
 
-    for (int i = 0; i < dim.size(); i++) {
-        int mdc = vetor[i].d1 / D1 ;
-        if(vetor[i].d2/D2 < mdc) mdc = vetor[i].d2/D2;
-        if(vetor[i].d1/D1 == 0 && vetor[i].d2/D2 == 0 && vetor[i].d1/D2 == 0 && vetor[i].d2/D1 == 0) {
-            // se a peca couber na original e for a maior peça
-            // já n sei oq estou a fazer :)
-            // pls help
-        }
+    // for (int i = 0; i < dim.size(); i++) {
+    //     int mdc = vetor[i].d1 / D1 ;
+    //     if(vetor[i].d2/D2 < mdc) mdc = vetor[i].d2/D2;
+    //     if(vetor[i].d1/D1 == 0 && vetor[i].d2/D2 == 0 && vetor[i].d1/D2 == 0 && vetor[i].d2/D1 == 0) {
+    //         // se a peca couber na original e for a maior peça
+    //         // já n sei oq estou a fazer :)
+    //         // pls help
+    //     }
 
-        // for (int j = i; j < dim.size(); j++) {
+    //     // for (int j = i; j < dim.size(); j++) {
             
-        // }   
-    }
+    //     // }   
+    // }
 
     std::cout << max << "\n";
 
