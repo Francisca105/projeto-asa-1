@@ -41,6 +41,12 @@ int main() {
         }
     }
 
+    // for(int i = 0; i < W; i++) {
+    //     std::cout << lista[i]->getP() << " ";
+    //     if((i+1) % X == 0)
+    //         std::cout << std::endl;
+    // }
+
     // for (int i = 0; i < W; ++i) {
     //     std::cout << "Price of element " << i << ": " << lista[i]->getP() << std::endl;
     // }
