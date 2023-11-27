@@ -2,7 +2,7 @@ CXXC = g++
 
 CXXFLAGS = -std=c++11 -O3 -Wall
 
-all: main proj proj2 v1 v2 v3 v4 v5 v4_vetores
+all: main proj proj2 v1 v2 v3 v4 v4_vetores
 
 main: main.cpp main.h
 	$(CXX) $(CXXFLAGS) -o main main.h main.cpp -lm
@@ -30,7 +30,7 @@ v4_vetores: v4_vetores.cpp
 
 .PHONY: clean
 clean:
-	rm -f main proj proj2 v1 v2 v3 v4
+	rm -f main proj proj2 v1 v2 v3 v4 v4_vetores
 
 run:
 	@./proj
