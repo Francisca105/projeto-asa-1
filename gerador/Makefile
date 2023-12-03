@@ -2,7 +2,7 @@ CXXC = g++
 
 CXXFLAGS = -std=c++11 -O3 -Wall
 
-all: main
+all: main testes
 
 main: gen_supermarble.cpp
 	$(CXX) $(CXXFLAGS) -o gen gen_supermarble.cpp -lm
