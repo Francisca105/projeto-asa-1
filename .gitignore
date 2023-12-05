@@ -10,3 +10,6 @@ v4_vetores
 gen
 vc
 a
+node_modules
+*.in
+*.json
